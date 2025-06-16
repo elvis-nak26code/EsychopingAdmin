@@ -7,7 +7,7 @@ export default function Commendes(){
 
    const validerC= async(Id,userId)=>{
       try{
-         const api = import.meta.env.VITE_API_URL;
+          const api = import.meta.env.VITE_API_URL;
           setBtnlogin(false)
           const token = localStorage.getItem("token")
           const reponce = await fetch(`${api}/api/admin/validerCommande`,{

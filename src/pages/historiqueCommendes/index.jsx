@@ -8,7 +8,7 @@ export default function Historique(){
    useEffect(()=>{
       async function userListe(){
          try{
-            const api = import.meta.env.VITE_API_URL;
+           const api = import.meta.env.VITE_API_URL;
            const response = await fetch(`${api}/api/admin/userListe`)
            const data = await response.json()
            if (!response.ok) {
